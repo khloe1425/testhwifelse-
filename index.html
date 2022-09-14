@@ -53,9 +53,8 @@
                             <h4 class="card--heading">📚 Xuất 3 số theo thứ tự tăng dần</h4>
                             <div class="callout callout-info">
 
-                                <p>💡<b>Gợi ý:</b> Với bài tập này chúng ta có nhiều cách giải. Bên dưới là một số gợi ý
-                                    đơn giản cho
-                                    bài này</p>
+                                <p>💡<b>Gợi ý:</b> </p>
+
                                 <details>
                                     <summary>Cách 1: Sử dụng các lệnh if else lồng nhau (mở rộng để xem thêm)</summary>
                                     <p class="px-3">
@@ -63,12 +62,17 @@
                                     </p>
                                 </details>
                                 <details>
-                                    <summary>Cách 2: Sử dụng các lệnh if elseif (mở rộng để xem thêm)</summary>
+                                    <summary>Cách 2: Sử dụng các lệnh else if (mở rộng để xem thêm)</summary>
                                     <p class="px-3">
                                         <img class="w-50" src="./img/carbon (1).png" alt="">
                                     </p>
 
                                 </details>
+                                <ul>
+                                    <li>Ép kiểu dữ liệu của các giá trị sang kiểu số để xử lý vì các giá trị nhận được
+                                        từ form mặc định sẽ ở kiểu chuỗi.
+                                    </li>
+                                </ul>
                                 <!-- <details>
                                     <summary>Flowchart điều kiện (mở rộng để xem thêm)</summary>
                                     <p class="px-3">
@@ -104,16 +108,17 @@
                         <div class="tab-pane fade" id="bai2" role="tabpanel" aria-labelledby="v-pills-profile-tab">
                             <h4 class="card--heading">👋 Chương trình "Chào hỏi"</h4>
                             <div class="callout callout-info">
-                                <p>💡<b>Gợi ý:</b>
-                                    <br>
-                                    Nên tạo một dropdown để người dùng chọn thành viên cần gửi lời chào. Cách này sẽ hạn
-                                    chế người
-                                    dùng nhập sai nội dung.
-                                    <br>
-                                    Mỗi thẻ option nên thêm value để dễ xử lý data sau khi lấy từ form.
-                                    <br>
-                                    Nên sử dụng câu điều kiện <i>if...else if... else</i>. Hoặc dùng <i>switch case</i>
-                                </p>
+                                <p>💡<b>Gợi ý:</b></p>
+                                <ul>
+                                    <li>Nên tạo một dropdown để người dùng chọn thành viên cần gửi lời chào. Cách này sẽ
+                                        hạn
+                                        chế người dùng nhập sai nội dung.</li>
+                                    <li>Mỗi thẻ option nên thêm value để dễ xử lý data sau khi lấy từ form.</li>
+                                    <li>Nên sử dụng câu điều kiện <i>if...else if... else</i>. Hoặc dùng <i>switch
+                                            case</i></li>
+                                </ul>
+
+
                                 <details>
                                     <summary>Dropdown HTML (mở rộng để xem thêm)</summary>
                                     <p class="px-3">
@@ -143,17 +148,22 @@
                         <div class="tab-pane fade" id="bai3" role="tabpanel" aria-labelledby="v-pills-messages-tab">
                             <h4 class="card--heading">🧮 Đếm số chẵn lẻ</h4>
                             <div class="callout callout-info">
-                                <p>💡<b>Gợi ý:</b>
-                                    <br>
-                                    Để kiểm tra 1 số là chẵn hay lẻ thì ta đem số đó chia với 2. Nếu chia hết thì là số
-                                    chẵn, ngược lại là số lẻ. (dùng toán tử <i>%</i>)
-                                    <br>
-                                    Tạo biến để chứa giá trị khi đếm. Sau khi xác định được số đó chẵn hoặc lẻ thì tăng
-                                    biến này lên 1 đơn vị (dùng các toán tử tăng: <i>count++, count+=1</i> )
-                                    <br>
-                                    <b>🤔TIP:</b> Chỉ cần đếm các số chẵn. Để xác định số lượng số lẻ ta chỉ cần lấy 3
-                                    trừ đi số lượng số chẵn đếm được (do chỉ nhập 3 số nguyên)
-                                </p>
+                                <p>💡<b>Gợi ý:</b></p>
+                                <ul>
+                                    <li>Để kiểm tra 1 số là chẵn hay lẻ thì ta đem số đó chia với 2. Nếu chia hết thì là
+                                        số
+                                        chẵn, ngược lại là số lẻ. (dùng toán tử <i>%</i>)</li>
+
+                                    <li>Tạo biến để chứa giá trị khi đếm. Sau khi xác định được số đó chẵn hoặc lẻ thì
+                                        tăng
+                                        biến này lên 1 đơn vị (dùng các toán tử tăng: <i>count++, count+=1</i> )</li>
+
+                                    <li><b>🤔TIP:</b> Chỉ cần đếm các số chẵn. Để xác định số lượng số lẻ ta chỉ cần lấy
+                                        3
+                                        trừ đi số lượng số chẵn đếm được (do chỉ nhập 3 số nguyên)
+                                    </li>
+                                </ul>
+
                             </div>
                             <form id="form3" class="row gy-3 align-items-center px-2">
                                 <div class="col-12 col-lg-4">
@@ -189,9 +199,18 @@
                                 <details>
                                     <summary>Cách xác định loại tam giác (mở rộng để xem thêm)</summary>
                                     <ul>
-                                        <li>Đều: Nếu 3 cạnh bằng nhau. Vd:a = 3, b=3 c=3 </li>
-                                        <li>Cân: Nếu 2 cạnh bằng nhau. Vd: a=2, b=2, c=1 </li>
-                                        <li>Vuông: c^2 = a^2 + b^2. Vd: a=3, b=4, c=5 </li>
+                                        <li>Ép kiểu dữ liệu của các cạnh sang kiểu số để xử lý vì các giá trị nhận được
+                                            từ form mặc định sẽ ở
+                                            kiểu chuỗi.</li>
+                                        <li>Kiểm tra 3 cạnh là của tam giác:
+                                            <br>
+                                            Ba cạnh a, b, c của một tam giác phải thỏa mãn điều kiện là tổng hai cạnh
+                                            bất kỳ luôn lớn hơn cạnh còn lại.
+                                            Tức là a+b>c và a+c>b và b+c>a.
+                                        </li>
+                                        <li>Tam giác đều nếu 3 cạnh bằng nhau. Vd:a = 3, b=3 c=3 </li>
+                                        <li>Tam giá cân nếu 2 cạnh bằng nhau. Vd: a=2, b=2, c=1 </li>
+                                        <li>Tam giá vuông nếu: c^2 = a^2 + b^2. Vd: a=3, b=4, c=5 </li>
                                     </ul>
                                 </details>
 
@@ -222,25 +241,74 @@
                         <div class="tab-pane fade" id="bai5" role="tabpanel" aria-labelledby="v-pills-settings-tab">
                             <h4 class="card--heading">📅 Tính ngày tháng năm</h4>
                             <div class="callout callout-info">
-                                <p>
+                                <!-- <p>
                                     📝<b>Note: Bài tập này không bắt buộc làm nên không làm hoặc bị lỗi sẽ không bị trừ
                                         điểm.</b>
                                     <br>
                                     Giả sử người dùng nhập đúng nên không cần kiểm tra hợp lệ
-                                </p>
+                                </p> -->
                                 <p>💡<b>Gợi ý:</b></p>
                                 <details>
                                     <summary>Mở rộng để xem thêm</summary>
                                     <ul>
                                         <li> Form nhập thông tin có thể tạo bằng input loại number, dropwdown hoặc input
                                             loại date đều được</li>
-                                        <li> Tháng 2 không cần xác định năm nhuận, lấy mặc định là 28 ngày</li>
-                                        <li> Khi người dùng chọn xem Ngày Mai thì chỉ cần tăng giá trị ngày lên 1. Ngược
-                                            lại, xem Ngày Hôm Qua thì trừ đi 1.</li>
-                                        <li> Những ngày đầu hoặc cuối tháng phải xử lý riêng. Ngày đầu tháng thì xem
-                                            Ngày Hôm Qua phải là ngày cuối của tháng trước đó. Ngày cuối tháng thì xem
-                                            Ngày Mai phải là ngày đầu của tháng kế tiếp. Tương tự với ngày đầu năm và
-                                            cuối năm </li>
+                                        <li>Đối với tháng 2, nếu là năm nhuận sẽ có 29 ngày. Ngược lại là 28 ngày. <br>
+                                            Cách kiểm tra năm nhuận:
+                                            <ul>
+                                                <li>Những năm chia hết cho 4 và không chia hết cho 100, hoặc những năm
+                                                    chia hết cho 400.
+                                                    <br>VD: 2012, 2016, 2020, 1600, 1200
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li> Khi người dùng chọn Ngày Mai thì chỉ cần tăng giá trị ngày lên 1. Ngược
+                                            lại, chọn Ngày Hôm Qua thì trừ đi 1.</li>
+
+                                        <li> Kiểm tra các trường hợp ngày đầu tháng: <br>
+                                            <ul>
+                                                <li>Nếu ngày nhập vào là ngày 1 của các tháng 5,7,10,12 thì Ngày Hôm Qua
+                                                    là ngày
+                                                    30 của tháng trước.
+                                                    VD: 1/12 => 30/11.</li>
+                                                <li>Nếu ngày nhập vào là ngày 1 của các tháng 1,2,4,6,8,9,11 thì Ngày
+                                                    Hôm Qua là
+                                                    ngày 31 của tháng trước.
+                                                    VD: 1/2 => 31/1.</li>
+                                                <li>Nếu ngày nhập vào là ngày 1 của tháng 3 và là năm nhuận thì Ngày Hôm
+                                                    Qua là 29/2.
+                                                    <br>Ngược lại, không phải năm nhuận thì Ngày Hôm Qua là 28/2
+                                                </li>
+
+                                            </ul>
+
+                                        </li>
+                                        <li>Kiểm tra các trường hợp ngày cuối tháng: <br>
+                                            <ul>
+                                                <li>
+                                                    Nếu ngày nhập vào là ngày 31 của các tháng 1,3,5,7,8,10,12 thì Ngày
+                                                    Mai là
+                                                    ngày
+                                                    1 của tháng kế tiếp. VD: 31/1 => 1/2.</li>
+                                                <li>Nếu ngày nhập vào là ngày 30 của các tháng 4,6,9,11 thì Ngày Mai là
+                                                    ngày
+                                                    1 của tháng kế tiếp. VD: 30/4 => 1/5.</li>
+                                                <li>
+                                                    Nếu là tháng 2 và năm nhuận thì ngày mai của ngày 29/2 mới là 1/3
+                                                    <br>
+                                                    Nếu là tháng 2 và năm không nhuận thì ngày mai của ngày 28/2 mới là
+                                                    1/3
+                                                </li>
+                                            </ul>
+
+                                        </li>
+
+                                        <li> Kiểm tra các trường hợp ngày đầu và cuối năm: <br>
+                                            Nếu ngày đầu năm thì ngày hôm qua là ngày 31/12 của năm cũ.VD: 1/1/2023 =>
+                                            31/12/2022
+                                            <br>Nếu ngày cuối năm thì ngày mai sẽ là 1/1 của năm mới. VD: 31/12/2022 =>
+                                            1/1/2023
+                                        </li>
                                     </ul>
                                 </details>
 
@@ -275,23 +343,24 @@
                         <div class="tab-pane fade" id="bai6" role="tabpanel" aria-labelledby="v-pills-settings-tab">
                             <h4 class="card--heading">🗓️ Tính ngày</h4>
                             <div class="callout callout-info">
-                                <p>
-                                    📝<b>Note: Bài tập này không bắt buộc làm nên không làm hoặc bị lỗi sẽ không bị trừ
-                                        điểm.</b>
-                                    <br>
-                                    Giả sử người dùng nhập đúng nên không cần kiểm tra hợp lệ
-                                </p>
+
                                 <p>💡<b>Gợi ý:</b></p>
                                 <details>
                                     <summary>Mở rộng để xem thêm</summary>
                                     <ul>
                                         <li> Form nhập thông tin có thể tạo bằng input loại number, dropwdown hoặc input
                                             loại date đều được</li>
-                                        <li>Đối với tháng 2, nếu là năm nhuận sẽ có 29 ngày. Cách kiểm tra năm nhuận:
+                                        <li>Đối với các tháng 1,3,5,7,8,10,12 sẽ có 31 ngày
+                                        </li>
+                                        <li>Đối với các tháng 4,6,9,11 sẽ có 30 ngày
+                                        </li>
+                                        <li>Đối với tháng 2, nếu là năm nhuận sẽ có 29 ngày. Ngược lại là 28 ngày. <br>
+                                            Cách kiểm tra năm nhuận:
                                             <ul>
-                                                <li>Năm chia hết cho 4 nhưng không chia hết cho 100. Vd:2012, 2016, 2020
+                                                <li>Những năm chia hết cho 4 và không chia hết cho 100, hoặc những năm
+                                                    chia hết cho 400.
+                                                    <br>VD: 2012, 2016, 2020, 1600, 1200
                                                 </li>
-                                                <li>Hoặc năm chia hết cho 400. Vd:1600, 1200 </li>
                                             </ul>
                                         </li>
                                     </ul>
@@ -320,20 +389,17 @@
                         <div class="tab-pane fade" id="bai7" role="tabpanel" aria-labelledby="v-pills-settings-tab">
                             <h4 class="card--heading">🔢 Đọc số</h4>
                             <div class="callout callout-info">
-                                <p>
-                                    📝<b>Note: Bài tập này không bắt buộc làm nên không làm hoặc bị lỗi sẽ không bị trừ
-                                        điểm.</b>
-                                    <br>
-                                    Giả sử người dùng nhập đúng nên không cần kiểm tra hợp lệ
-                                </p>
+
                                 <p>💡<b>Gợi ý:</b>
                                 </p>
                                 <details>
                                     <summary>Mở rộng để xem thêm</summary>
                                     <ul>
-                                        <li> Sử dụng cách lấy số hàng trăm, hàng chục, hàng đơn vị</li>
+                                        <li>Nhập số 123 sẽ đọc thành một trăm hai mươi ba</li>
+                                        <li>Sử dụng cách lấy từng số hàng trăm, hàng chục, hàng đơn vị. Dùng kiến thức
+                                            lấy phần dư (%), lấy phần nguyên Math.floor() của phép chia / </li>
                                         <li>Sử dụng <i>if...else if...else</i> hoặc <i>switch case</i> để xử lý cách đọc
-                                            số. Vd: 3 => ba, 2 => hai ...
+                                            số.
                                         </li>
                                     </ul>
                                 </details>
@@ -357,11 +423,7 @@
                             <h4 class="card--heading">🗺️ Tìm sinh viên xa trường nhất</h4>
                             <div class="callout callout-info">
                                 <p>
-                                    📝<b>Note: Bài tập này không bắt buộc làm nên không làm hoặc bị lỗi sẽ không bị trừ
-                                        điểm.</b>
-                                    <br>
-                                    Giả sử người dùng nhập đúng nên không cần kiểm tra hợp lệ. Và các sinh viên ở các
-                                    địa điểm khác nhau không ở chung.
+                                    📝 Giả sử các sinh viên ở các địa điểm khác nhau không ở chung.
                                     <br>
                                     Chỉ cần tính quãng đường theo tọa độ 2 đầu của 1 đoạn thẳng trên mặt phẳng
                                 </p>
@@ -372,9 +434,9 @@
                                     <ul>
                                         <li> Áp dụng cách tính đoạn thẳng theo tọa độ
                                             <ul>
-                                                <li>d là độ dài đoạn thẳng.
-                                                    (x1, y1) là tọa độ điểm đầu của đoạn thẳng.
-                                                    (x2, y2) là tọa độ điểm thứ 2 của đoạn thẳng</li>
+                                                <li>d là độ dài đoạn đường.
+                                                    (x1, y1) là tọa độ điểm đầu (toạ độ nhà sinh viên).
+                                                    (x2, y2) là tọa độ điểm cuối (toạ độ ngôi trường)</li>
                                                 <li><img src="./img/e82b29b690b69383a7c8512ef0223a0e353ec94c.svg"
                                                         alt=""></li>
                                             </ul>
@@ -382,6 +444,7 @@
                                         <li>Sử dụng <i>if...else if...else</i> để so sánh độ dài các đoạn đường. Sau khi
                                             xác định được đoạn đường dài nhất thì thông báo tên sinh viên
                                         </li>
+
                                     </ul>
                                 </details>
 

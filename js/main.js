@@ -160,6 +160,13 @@ document.getElementById("btnCount").onclick = function () {
 /**
 * Bài tập: Đoán hình tam giác 
 */
+let checkCanhTamGiac = (c1, c2, c3) => {
+    if ((c1 + c2 > c3) && (c1 + c3 > c2) && (c2 + c3 > c1)) {
+        return true;
+    }
+
+    return false;
+}
 
 document.getElementById("btnEdge").onclick = function () {
     var c1 = document.getElementById("inputEdge1").value;
@@ -169,7 +176,7 @@ document.getElementById("btnEdge").onclick = function () {
 
     let isValid = hasValue(c1) && isNum(c1) && isPositive(c1) && hasValue(c2) && isNum(c2) && isPositive(c2) && hasValue(c3) && isNum(c3) && isPositive(c3);
 
-    if (isValid && (c1 + c2 > c3) && (c1 + c3 > c2) && (c2 + c3 > c1)) {
+    if (isValid && checkCanhTamGiac(Number(c1), Number(c2), Number(c3))) {
         var pow1 = Math.sqrt(Math.pow(c2, 2) + Math.pow(c3, 2));
         var pow2 = Math.sqrt(Math.pow(c1, 2) + Math.pow(c3, 2));
         var pow3 = Math.sqrt(Math.pow(c1, 2) + Math.pow(c2, 2));
@@ -353,7 +360,7 @@ document.getElementById("btnReadInt").addEventListener("click", function () {
     var kqDonVi = "";
     var kqAm = "";
 
-    let isValid = hasValue(so) && isNum(so) && isInt(so);
+    let isValid = hasValue(so) && isNum(so) && isInt(so) && (Number(so) > 99 && Number(so) < 1000);
 
 
     if (!isValid) {
